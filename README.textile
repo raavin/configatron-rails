@@ -1,0 +1,50 @@
+h2. "ConfigatronRails":http://www.github.com/cmaggard/configatron-rails
+
+ConfigatronRails is a plugin born out of a want for environment-specific
+variables using a gem I've grown to appreciate: 
+"configatron":http://github.com/markbates/configatron.
+
+* "Installation":#INSTALL
+* "Sample Usage":#SAMPLE
+
+<hr>
+
+<a id="#INSTALL"> </a>
+h3. Installation
+
+  <pre><code>
+    cd vendor/plugins
+
+    git clone http://github.com/cmaggard/configatron-rails.git configatron_git
+
+    script/generate settings
+  </code></pre>
+
+<hr>
+
+<a id="#SAMPLE"> </a>
+h3. Sample Usage:
+
+_In settings.yml_
+  <pre><code>
+    development: &local
+      site_address: http://localhost:3000/
+
+    test:
+      <<: *local
+  
+    production:
+      site_address: http://www.thebestappev.er/
+  </code></pre>
+
+_In 'script/console development' and 'script/console test'_
+  <pre><code>
+    >> configatron.site_address  # => "http://localhost:3000/"
+  </code></pre>
+
+_In 'script/console production'_
+  <pre><code>
+    >> configatron.site_address  # => "http://www.thebestappev.er/"
+  </code></pre>
+
+Copyright (C) 2008 Cody Maggard, released under the MIT license
