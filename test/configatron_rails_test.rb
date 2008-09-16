@@ -1,8 +1,8 @@
 require 'test/unit'
+require File.dirname(__FILE__) + '/test_helper.rb'
 
 class ConfigatronRailsTest < Test::Unit::TestCase
-  # Replace this with your real tests.
-  def test_rails_load
-    flunk
+  def test_injection
+    assert_respond_to configatron, :load_environment_settings
   end
 end
