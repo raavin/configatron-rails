@@ -12,6 +12,9 @@ variables using a gem I've grown to appreciate:
 <a id="#INSTALL"> </a>
 h3. Installation
 
+*Make sure you have Configatron installed before following these steps!*
+@sudo gem install configatron@
+
   <pre><code>
     cd vendor/plugins
 
