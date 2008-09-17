@@ -6,6 +6,7 @@ variables using a gem I've grown to appreciate:
 
 * "Installation":#INSTALL
 * "Sample Usage":#SAMPLE
+* "Version History":#VERSION
 
 <hr>
 
@@ -16,9 +17,7 @@ h3. Installation
 @sudo gem install configatron@
 
   <pre><code>
-    cd vendor/plugins
-
-    git clone http://github.com/cmaggard/configatron-rails.git configatron_git
+    script/plugin install git://github.com/cmaggard/configatron-rails.git -r 0.1
 
     script/generate settings
   </code></pre>
@@ -28,7 +27,7 @@ h3. Installation
 <a id="#SAMPLE"> </a>
 h3. Sample Usage:
 
-_In settings.yml_
+_In config.yml_
   <pre><code>
     development: &local
       site_address: http://localhost:3000/
@@ -49,5 +48,13 @@ _In 'script/console production'_
   <pre><code>
     >> configatron.site_address  # => "http://www.thebestappev.er/"
   </code></pre>
+
+<hr>
+
+<a id="#VERSION"> </a>
+h3. Version History
+
+* *0.2* - Environment seeding of config.yml based upon database.yml
+* 0.1 - First Release
 
 Copyright (C) 2008 Cody Maggard, released under the MIT license
