@@ -20,11 +20,11 @@ h3. Installation
     cd vendor/plugins
     git clone git://github.com/cmaggard/configatron-rails.git configatron_rails
     cd configatron_rails
-    git checkout 0.1
+    git checkout 0.2
     cd ..
     rm -rf configatron_rails/.git
     cd ../..
-    script/generate settings
+    script/generate config
   </code></pre>
 
 <hr>
