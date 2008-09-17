@@ -17,8 +17,13 @@ h3. Installation
 @sudo gem install configatron@
 
   <pre><code>
-    script/plugin install git://github.com/cmaggard/configatron-rails.git -r 0.1
-
+    cd vendor/plugins
+    git clone git://github.com/cmaggard/configatron-rails.git configatron_rails
+    cd configatron_rails
+    git checkout 0.1
+    cd ..
+    rm -rf configatron_rails/.git
+    cd ../..
     script/generate settings
   </code></pre>
 
