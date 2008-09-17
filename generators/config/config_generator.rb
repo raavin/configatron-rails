@@ -8,6 +8,6 @@ class ConfigGenerator < Rails::Generator::Base
   end
 
   def get_environments
-    YAML.load("config/database.yml").keys
+    YAML.load_file("config/database.yml").keys
   end
 end
