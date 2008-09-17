@@ -20,7 +20,7 @@ h3. Installation
     cd vendor/plugins
     git clone git://github.com/cmaggard/configatron-rails.git configatron_rails
     cd configatron_rails
-    git checkout 0.2
+    git checkout 0.2.1
     cd ..
     rm -rf configatron_rails/.git
     cd ../..
@@ -59,7 +59,8 @@ _In 'script/console production'_
 <a id="#VERSION"> </a>
 h3. Version History
 
-* *0.2* - Environment seeding of config.yml based upon database.yml
+* *0.2.1* - Minor tweaks to template file
+* 0.2 - Environment seeding of config.yml based upon database.yml
 * 0.1 - First Release
 
 Copyright (C) 2008 Cody Maggard, released under the MIT license
