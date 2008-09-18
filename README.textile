@@ -14,7 +14,13 @@ variables using a gem I've grown to appreciate:
 h3. Installation / Upgrading
 
 *Make sure you have configatron (2.0 or higher) installed before following these steps!*
-@sudo gem install configatron@
+
+  <pre><code>
+    > sudo gem install configatron
+  
+    # Or toss this in your environment.rb (preferred method)
+    config.gem "configatron"
+  </code></pre>
 
   <pre><code>
     cd vendor/plugins
