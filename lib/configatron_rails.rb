@@ -1,4 +1,4 @@
-Configatron::Configuration.class_eval do
+Configatron.class_eval do
   def initialize_with_settings
     initialize_without_settings
     load_environment_settings
