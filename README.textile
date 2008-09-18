@@ -11,7 +11,7 @@ variables using a gem I've grown to appreciate:
 <hr>
 
 <a id="#INSTALL"> </a>
-h3. Installation
+h3. Installation / Upgrading
 
 *Make sure you have configatron (2.0 or higher) installed before following these steps!*
 @sudo gem install configatron@
@@ -20,12 +20,15 @@ h3. Installation
     cd vendor/plugins
     git clone git://github.com/cmaggard/configatron-rails.git configatron_rails
     cd configatron_rails
-    git checkout 0.3
+    git checkout 0.4
     cd ..
     rm -rf configatron_rails/.git
     cd ../..
     script/generate config
   </code></pre>
+
+If upgrading, run @script/generate config@ again, as this will copy the necessary
+initializer file over.  Just don't overwrite your config.yml. ;)
 
 <hr>
 
@@ -59,7 +62,8 @@ _In 'script/console production'_
 <a id="#VERSION"> </a>
 h3. Version History
 
-* *0.3* - Updated for configatron 2.0
+* *0.4* - Updated for configatron 2.1.1, changed to initializer script
+* 0.3 - Updated for configatron 2.0
 * 0.2.1 - Minor tweaks to template file
 * 0.2 - Environment seeding of config.yml based upon database.yml
 * 0.1 - First Release
