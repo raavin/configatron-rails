@@ -13,14 +13,14 @@ variables using a gem I've grown to appreciate:
 <a id="#INSTALL"> </a>
 h3. Installation
 
-*Make sure you have Configatron installed before following these steps!*
+*Make sure you have configatron (2.0 or higher) installed before following these steps!*
 @sudo gem install configatron@
 
   <pre><code>
     cd vendor/plugins
     git clone git://github.com/cmaggard/configatron-rails.git configatron_rails
     cd configatron_rails
-    git checkout 0.2.1
+    git checkout 0.3
     cd ..
     rm -rf configatron_rails/.git
     cd ../..
@@ -59,7 +59,8 @@ _In 'script/console production'_
 <a id="#VERSION"> </a>
 h3. Version History
 
-* *0.2.1* - Minor tweaks to template file
+* *0.3* - Updated for configatron 2.0
+* 0.2.1 - Minor tweaks to template file
 * 0.2 - Environment seeding of config.yml based upon database.yml
 * 0.1 - First Release
 
